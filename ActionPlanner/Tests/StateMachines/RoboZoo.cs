@@ -497,14 +497,13 @@ namespace ActionPlanner.Tests.StateMachines
                 TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> SearchMarker state reached.");        
 
             //trying to execute the findmarker command
-            if(cmdMan.VISION_findmarker(out SMConfiguration.markerCommand, 10000))
+            if(cmdMan.OBJ_FNDT_findpaddle(out SMConfiguration.markerCommand, 10000))
             {
                 //findmarker command executed succesfully                
                 if(SMConfiguration.markerCommand=="")   //check if a marker was found
                     SMConfiguration.markerFound=false;  //marker not found
                 else
                     SMConfiguration.markerFound=true;   //marker found
-
             }
 
             searchAttempt++;

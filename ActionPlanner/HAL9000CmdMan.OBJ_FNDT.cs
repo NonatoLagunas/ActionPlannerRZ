@@ -401,6 +401,25 @@ namespace ActionPlanner
             }
             return true;
         }
+
+        public bool OBJ_FNDT_findpaddle(out string command, int timeout_ms)
+        {
+            command = "";
+
+            this.SetupAndSendCommand(JustinaCommands.OBJ_FNDT_findpaddle, string.Empty);
+            if (!this.WaitForResponse(JustinaCommands.OBJ_FNDT_findpaddle, timeout_ms)) return false;
+
+            try
+            {
+                command = this.justinaCmdAndResp[(int)JustinaCommands.OBJ_FNDT_findpaddle].Response.Parameters;
+            }
+            catch
+            {
+                TextBoxStreamWriter.DefaultLog.WriteLine("CmdMan: Cannot parse response from oft_findpaddle");
+                return false;
+            }
+            return true;
+        }
         #endregion
     }
 }

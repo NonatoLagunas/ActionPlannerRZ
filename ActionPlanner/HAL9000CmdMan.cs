@@ -35,7 +35,7 @@ namespace ActionPlanner
 		OBJ_FNDT_sethumantracker, OBJ_FNDT_tracking, OBJ_FNDT_findhuman, OBJ_FNDT_findandtrackhuman,
 		OBJ_FNDT_locatehuman, OBJ_FNDT_remember, OBJ_FNDT_findedgereloaded, OBJ_FNDT_trainshirt, OBJ_FNDT_testshirt,
 		OBJ_FNDT_detectsmoke, OBJ_FNDT_takepicture,OBJ_FNDT_findedgereturns,OBJ_FNDT_findgolemhand,
-		OBJ_FNDT_findedgefastandfurious, OBJ_FNDT_gestodi,
+		OBJ_FNDT_findedgefastandfurious, OBJ_FNDT_gestodi, OBJ_FNDT_findpaddle,
 
 		VISION_findmarker,VISION_findmarkermultiplelanguages, VISION_findfall, VISION_findwaving,
 
@@ -176,6 +176,7 @@ namespace ActionPlanner
 			this.justinaCmdAndResp[(int)JustinaCommands.OBJ_FNDT_takepicture] = new JustinaCmdAndResp("oft_takepicture");
 			this.justinaCmdAndResp[(int)JustinaCommands.OBJ_FNDT_findgolemhand] = new JustinaCmdAndResp("oft_findgolemhand");
 			this.justinaCmdAndResp[(int)JustinaCommands.OBJ_FNDT_gestodi] = new JustinaCmdAndResp("oft_gestodi");
+            this.justinaCmdAndResp[(int)JustinaCommands.OBJ_FNDT_findpaddle] = new JustinaCmdAndResp("oft_findpaddle");            
 
 			#endregion
 			#region Commands for VSN_VISION
