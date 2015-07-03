@@ -327,7 +327,7 @@ namespace ActionPlanner.Tests.StateMachines
                 //incremen/reset the counter (if the counter reachs the lenght of the positions array then reset)
                 movementCounter = (movementCounter == SMConfiguration.HEAD_SearchMovements.Length) ? 0 : movementCounter;
                 //sleep the thread a while
-                Thread.Sleep(500);
+                Thread.Sleep(2000);
             }
             //return head to 0,0
             this.cmdMan.HEAD_lookat(0.0, 0.0, 3000);

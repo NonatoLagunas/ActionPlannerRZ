@@ -124,9 +124,9 @@ namespace ActionPlanner.Tests.ConfigurationFiles
             markerCommand = "";
             intMarkerCommand=-1;
             commandList = new Dictionary<string, int>(3);
-            commandList.Add("dance", (int)Commands.Dance);
-            commandList.Add("hypnotize", (int)Commands.Hypnotize);
-            commandList.Add("presentation", (int)Commands.Presentation);
+            commandList.Add("bailar", (int)Commands.Dance);
+            commandList.Add("hipnotizar", (int)Commands.Hypnotize);
+            commandList.Add("presentar", (int)Commands.Presentation);
 
             //initialize spgen phrases
             SPGEN_searchp1 = "Hello humans. Please, put a marker in front of my eyes.";
